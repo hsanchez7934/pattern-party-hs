@@ -1,0 +1,12 @@
+{
+  "name": "pattery-party",
+  "version": "1.0.0",
+  "description": "CSS style guide.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "sass --watch src/scss:src/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
