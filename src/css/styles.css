@@ -7,9 +7,10 @@
   display: inline-block;
   position: absolute;
   background-color: white;
-  margin: -70px 0px 0px 0px;
-  width: 160px;
-  font-weight: 300; }
+  margin: -75px 0px 0px 0px;
+  width: 220px;
+  font-weight: 300;
+  font-size: 20px; }
 
 #accordion-box {
   height: 600px;
@@ -29,7 +30,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d1d2d3; }
+  background-color: #d1d2d3;
+  border-bottom: 2px solid #666;
+  border-left: 1.5px solid #f2f2f2; }
+
+.tabs:hover {
+  cursor: pointer;
+  border-top: 2px solid #d1d2d3;
+  border-right: 2px solid #d1d2d3;
+  border-left: 2px solid #d1d2d3;
+  border-bottom-width: 0px;
+  background-color: white; }
 
 .tabs-text {
   margin: 0;
@@ -56,10 +67,14 @@
   width: 63%;
   padding-right: 30px; }
 
-.tabs-image {
+#tabs-image {
   height: 90%;
   width: 90%;
-  border: 3px solid #666; }
+  border: 3px solid #666;
+  background-image: url(../assets/bruce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .info-container-right-section-top {
   height: 20%;
@@ -89,6 +104,175 @@
   margin-top: 45px;
   padding-right: 30px; }
 
+.tabs-active {
+  border-top: 2px solid #d1d2d3;
+  border-right: 2px solid #d1d2d3;
+  border-left: 2px solid #d1d2d3;
+  border-bottom-width: 0px;
+  background-color: white; }
+
+#view-code-button1 {
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin: 80px auto 0px auto;
+  font-size: 18px;
+  background-color: #2f2235;
+  color: #f2f2f2;
+  font-weight: lighter; }
+
+#view-code-button1:hover {
+  background-color: #3f3244;
+  cursor: pointer; }
+
+@media screen and (max-width: 1500px) {
+  #info-title {
+    font-size: 20px; }
+
+  #info-text-top {
+    font-size: 16px; }
+
+  #info-text-bottom {
+    font-size: 16px; } }
+@media screen and (max-width: 1250px) {
+  #accordion-tabs-container {
+    display: none; } }
+@media screen and (max-width: 1250px) {
+  #accordion-title-mobile {
+    width: 90%;
+    margin: 0px auto 15px auto;
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px; }
+
+  #mobile-line {
+    width: 20%;
+    border: 1px solid #d1d2d3;
+    margin: 0px auto 110px; }
+
+  #accordion-box-mobile {
+    width: 90%;
+    height: 700px;
+    border-top: 2px solid #d1d2d3;
+    border-right: 2px solid #d1d2d3;
+    border-left: 2px solid #d1d2d3;
+    border-bottom-width: 0px;
+    margin: 0 auto; }
+
+  .mobile-tabs {
+    width: 100%;
+    height: 25%;
+    background-color: #d1d2d3;
+    border: 2px solid white;
+    cursor: pointer; }
+
+  .mobile-tabs-active {
+    width: 100%;
+    height: 25%;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    cursor: pointer; }
+
+  .mobile-tab-title {
+    float: left;
+    height: 100%;
+    width: 80%;
+    color: #666;
+    margin: 0;
+    font-size: 40px;
+    padding: 60px 0px 0px 20px; }
+
+  .mobile-icon-container {
+    float: right;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .tab-icon {
+    height: 45px;
+    width: 45px; }
+
+  .content-box {
+    display: none; }
+
+  .content-box-show {
+    height: 900px;
+    display: block; }
+
+  .content-image {
+    width: 100%;
+    height: 30%; }
+
+  #content-image1 {
+    background-image: url(../assets/bruce.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  #content-image2 {
+    background-image: url(../assets/joker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  #content-image3 {
+    background-image: url(../assets/harvey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  #content-image4 {
+    background-image: url(../assets/batman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+  .content-text-box {
+    width: 100%;
+    height: 70%;
+    border: 2px solid #d1d2d3; }
+
+  .content-title {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    height: 13%;
+    border-bottom: 1px solid #d1d2d3;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    word-wrap: break-word; }
+
+  .content-text-top {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    height: 50%;
+    padding-top: 30px;
+    font-size: 18px; }
+
+  .content-text-bottom {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    height: 37%;
+    padding-bottom: 10px;
+    font-size: 18px; } }
+@media screen and (max-width: 500px) {
+  .content-title {
+    font-size: 18px; }
+
+  .content-text-top {
+    font-size: 15px; }
+
+  .content-text-bottom {
+    font-size: 15px; }
+
+  .mobile-tab-title {
+    font-size: 33px; }
+
+  .tab-icon {
+    height: 37px;
+    width: 37px; } }
 * {
   box-sizing: border-box; }
 
@@ -109,24 +293,102 @@ header {
   background-color: #2f2235;
   padding: 0px 50px 0px 30px; }
 
+#header-line {
+  display: none; }
+
 #project-title {
   margin: 30px 0px 0px 0px;
   font-weight: 300;
   color: #f2f2f2;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 38px; }
 
 #student-name {
   margin: 50px 0px 0px 0px;
   float: right;
   color: #f2f2f2;
   font-weight: 300;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 20px; }
 
 #party-text {
   color: #34d1d1;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-left: 10px; }
 
 main {
   padding: 70px 60px 0px 60px; }
+
+#accordion-mobile-container {
+  display: none; }
+
+#view-code-mobile1 {
+  display: none; }
+
+#source-code {
+  width: 90%;
+  height: 1000px;
+  border: 1px solid #d1d2d3;
+  margin: 50px auto 0px auto;
+  display: flex; }
+
+.code-boxes {
+  height: 100%;
+  width: 33.33%;
+  border: 1px solid black; }
+
+#html-code {
+  overflow-y: scroll;
+  word-wrap: break-word; }
+
+@media screen and (max-width: 1250px) {
+  #project-title {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px; }
+
+  #student-name {
+    display: block;
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px; }
+
+  header {
+    height: 150px;
+    padding-top: 20px; }
+
+  #header-line {
+    display: block;
+    border: 1px solid #3f3244;
+    width: 20%;
+    margin: 0 auto; }
+
+  main {
+    padding: 70px 0px 50px 0px; }
+
+  #accordion-mobile-container {
+    display: block; }
+
+  #view-code-mobile1 {
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin: 80px auto 0px auto;
+    font-size: 18px;
+    background-color: #2f2235;
+    color: #f2f2f2;
+    font-weight: lighter; }
+
+  #view-code-mobile1:hover {
+    background-color: #3f3244;
+    cursor: pointer; } }
+@media screen and (max-width: 500px) {
+  #view-code-mobile1 {
+    width: 90%; } }
 
 /*# sourceMappingURL=styles.css.map */

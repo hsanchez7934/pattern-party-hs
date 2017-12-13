@@ -2,7 +2,6 @@
 
 #accordion-tabs-container {
   border-top: 1px solid $color5;
-  // height: 400px;
   padding-top: 60px;
 }
 
@@ -10,22 +9,21 @@
   display: inline-block;
   position: absolute;
   background-color: white;
-  margin: -70px 0px 0px 0px;
-  width: 160px;
+  margin: -75px 0px 0px 0px;
+  width: 220px;
   font-weight: 300;
+  font-size: 20px;
 }
 
 #accordion-box {
   height: 600px;
   width: 90%;
-  // background-color: yellow;
   margin: 0 auto;
 }
 
 #tabs-container {
   height: 15%;
   width: 100%;
-  // background-color: purple;
   display: flex;
   flex-direction: row;
 }
@@ -34,11 +32,21 @@
   display: inline-block;
   width: 25%;
   height: 100%;
-  // border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color5
+  background-color: $color5;
+  border-bottom: 2px solid $color6;
+  border-left: 1.5px solid $color4;
+}
+
+.tabs:hover {
+  cursor: pointer;
+  border-top: 2px solid $color5;
+  border-right: 2px solid $color5;
+  border-left: 2px solid $color5;
+  border-bottom-width: 0px;
+  background-color: white;
 }
 
 .tabs-text {
@@ -49,7 +57,6 @@
 #info-container {
   height: 85%;
   width: 100%;
-  // background-color: blue;
   border-right: 3px solid $color5;
   border-bottom: 3px solid $color5;
   border-left: 3px solid $color5;
@@ -57,7 +64,6 @@
 
 #info-container-left-section {
   float: left;
-  // background-color: magenta;
   height: 100%;
   width: 37%;
   display: flex;
@@ -67,23 +73,24 @@
 
 #info-container-right-section {
   float: right;
-  // background-color: pink;
   height: 100%;
   width: 63%;
   padding-right: 30px;
 }
 
-.tabs-image {
+#tabs-image {
   height: 90%;
   width: 90%;
-  // background-color: purple;
   border: 3px solid $color6;
+  background-image: url(../assets/bruce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .info-container-right-section-top {
   height: 20%;
   width: 100%;
-  // background-color: blue;
   border-bottom: 3px solid $color5;
   padding-top: 50px;
   padding-right: 0px;
@@ -93,7 +100,6 @@
 .info-container-right-section-bottom {
   height: 80%;
   width: 100%;
-  // background-color: green;
   padding-top: 40px;
 }
 
@@ -114,4 +120,48 @@
   font-size: 19px;
   margin-top: 45px;
   padding-right: 30px;
+}
+
+.tabs-active {
+  border-top: 2px solid $color5;
+  border-right: 2px solid $color5;
+  border-left: 2px solid $color5;
+  border-bottom-width: 0px;
+  background-color: white;
+}
+
+#view-code-button1 {
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin: 80px auto 0px auto;
+  font-size: 18px;
+  background-color: $color2;
+  color: $color4;
+  font-weight: lighter;
+}
+
+#view-code-button1:hover {
+  background-color: $color3;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  #info-title {
+    font-size: 20px;
+  }
+
+  #info-text-top {
+    font-size: 16px;
+  }
+
+  #info-text-bottom {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #accordion-tabs-container {
+    display: none;
+  }
 }

@@ -6,9 +6,10 @@
   display: inline-block;
   position: absolute;
   background-color: white;
-  margin: -70px 0px 0px 0px;
-  width: 160px;
-  font-weight: 300; }
+  margin: -75px 0px 0px 0px;
+  width: 220px;
+  font-weight: 300;
+  font-size: 20px; }
 
 #accordion-box {
   height: 600px;
@@ -28,7 +29,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d1d2d3; }
+  background-color: #d1d2d3;
+  border-bottom: 2px solid #666;
+  border-left: 1.5px solid #f2f2f2; }
+
+.tabs:hover {
+  cursor: pointer;
+  border-top: 2px solid #d1d2d3;
+  border-right: 2px solid #d1d2d3;
+  border-left: 2px solid #d1d2d3;
+  border-bottom-width: 0px;
+  background-color: white; }
 
 .tabs-text {
   margin: 0;
@@ -55,10 +66,14 @@
   width: 63%;
   padding-right: 30px; }
 
-.tabs-image {
+#tabs-image {
   height: 90%;
   width: 90%;
-  border: 3px solid #666; }
+  border: 3px solid #666;
+  background-image: url(../assets/bruce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .info-container-right-section-top {
   height: 20%;
@@ -87,5 +102,39 @@
   font-size: 19px;
   margin-top: 45px;
   padding-right: 30px; }
+
+.tabs-active {
+  border-top: 2px solid #d1d2d3;
+  border-right: 2px solid #d1d2d3;
+  border-left: 2px solid #d1d2d3;
+  border-bottom-width: 0px;
+  background-color: white; }
+
+#view-code-button1 {
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin: 80px auto 0px auto;
+  font-size: 18px;
+  background-color: #2f2235;
+  color: #f2f2f2;
+  font-weight: lighter; }
+
+#view-code-button1:hover {
+  background-color: #3f3244;
+  cursor: pointer; }
+
+@media screen and (max-width: 1500px) {
+  #info-title {
+    font-size: 20px; }
+
+  #info-text-top {
+    font-size: 16px; }
+
+  #info-text-bottom {
+    font-size: 16px; } }
+@media screen and (max-width: 1250px) {
+  #accordion-tabs-container {
+    display: none; } }
 
 /*# sourceMappingURL=accordion.css.map */

@@ -1,6 +1,7 @@
 @import "./colors.scss";
 @import "./font.scss";
 @import "./accordion.scss";
+@import "./accordion-mobile.scss";
 
 * {
   box-sizing: border-box;
@@ -26,11 +27,16 @@ header {
   padding: 0px 50px 0px 30px;
 }
 
+#header-line {
+  display: none;
+}
+
 #project-title {
   margin: 30px 0px 0px 0px;
   font-weight: 300;
   color: $color4;
   display: inline-block;
+  font-size: 38px;
 }
 
 #student-name {
@@ -39,13 +45,105 @@ header {
   color: $color4;
   font-weight: 300;
   display: inline-block;
+  font-size: 20px;
 }
 
 #party-text {
   color: $color1;
   font-weight: 300;
+  margin-left: 10px;
 }
 
 main {
   padding: 70px 60px 0px 60px;
+}
+
+#accordion-mobile-container {
+  display: none;
+}
+
+#view-code-mobile1 {
+  display: none;
+}
+
+#source-code {
+  width: 90%;
+  height: 1000px;
+  border: 1px solid $color5;
+  margin: 50px auto 0px auto;
+  display: flex;
+
+}
+
+.code-boxes {
+  height: 100%;
+  width: 33.33%;
+  border: 1px solid black;
+}
+
+#html-code {
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 1250px) {
+  #project-title {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  #student-name {
+    display: block;
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  header {
+    height: 150px;
+    padding-top: 20px;
+  }
+
+  #header-line {
+    display: block;
+    border: 1px solid $color3;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 70px 0px 50px 0px;
+  }
+
+  #accordion-mobile-container {
+    display: block;
+  }
+
+  #view-code-mobile1 {
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin: 80px auto 0px auto;
+    font-size: 18px;
+    background-color: $color2;
+    color: $color4;
+    font-weight: lighter;
+  }
+
+  #view-code-mobile1:hover {
+    background-color: $color3;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #view-code-mobile1 {
+    width: 90%;
+  }
 }
