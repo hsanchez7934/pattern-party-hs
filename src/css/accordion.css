@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 #accordion-tabs-container {
   border-top: 1px solid #d1d2d3;
   padding-top: 60px; }
@@ -89,44 +88,4 @@
   margin-top: 45px;
   padding-right: 30px; }
 
-* {
-  box-sizing: border-box; }
-
-html {
-  height: 100%;
-  width: 100%; }
-
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif; }
-
-header {
-  height: 100px;
-  width: 100%;
-  background-color: #2f2235;
-  padding: 0px 50px 0px 30px; }
-
-#project-title {
-  margin: 30px 0px 0px 0px;
-  font-weight: 300;
-  color: #f2f2f2;
-  display: inline-block; }
-
-#student-name {
-  margin: 50px 0px 0px 0px;
-  float: right;
-  color: #f2f2f2;
-  font-weight: 300;
-  display: inline-block; }
-
-#party-text {
-  color: #34d1d1;
-  font-weight: 300; }
-
-main {
-  padding: 70px 60px 0px 60px; }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=accordion.css.map */

@@ -1,0 +1,117 @@
+@import "./colors.scss";
+
+#accordion-tabs-container {
+  border-top: 1px solid $color5;
+  // height: 400px;
+  padding-top: 60px;
+}
+
+#accordion-title {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  margin: -70px 0px 0px 0px;
+  width: 160px;
+  font-weight: 300;
+}
+
+#accordion-box {
+  height: 600px;
+  width: 90%;
+  // background-color: yellow;
+  margin: 0 auto;
+}
+
+#tabs-container {
+  height: 15%;
+  width: 100%;
+  // background-color: purple;
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  // border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color5
+}
+
+.tabs-text {
+  margin: 0;
+  font-size: 20px;
+}
+
+#info-container {
+  height: 85%;
+  width: 100%;
+  // background-color: blue;
+  border-right: 3px solid $color5;
+  border-bottom: 3px solid $color5;
+  border-left: 3px solid $color5;
+}
+
+#info-container-left-section {
+  float: left;
+  // background-color: magenta;
+  height: 100%;
+  width: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-container-right-section {
+  float: right;
+  // background-color: pink;
+  height: 100%;
+  width: 63%;
+  padding-right: 30px;
+}
+
+.tabs-image {
+  height: 90%;
+  width: 90%;
+  // background-color: purple;
+  border: 3px solid $color6;
+}
+
+.info-container-right-section-top {
+  height: 20%;
+  width: 100%;
+  // background-color: blue;
+  border-bottom: 3px solid $color5;
+  padding-top: 50px;
+  padding-right: 0px;
+  font-weight: 600;
+}
+
+.info-container-right-section-bottom {
+  height: 80%;
+  width: 100%;
+  // background-color: green;
+  padding-top: 40px;
+}
+
+#info-title {
+  margin: 0;
+  font-size: 24px;
+
+}
+
+#info-text-top {
+  margin: 0;
+  font-size: 19px;
+  padding-right: 30px;
+}
+
+#info-text-bottom {
+  margin: 0;
+  font-size: 19px;
+  margin-top: 45px;
+  padding-right: 30px;
+}
